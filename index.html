@@ -1,7 +1,183 @@
+<!-- prasad zadokar
+     Roll no: 79   -->
+
 <!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <title>
-        "hii"
-    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .sidebar {
+            height: 100%;
+            width: 250px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #343a40;
+            padding-top: 20px;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            padding: 10px 15px;
+            color: #ffffff;
+        }
+
+        .dashboard {
+            margin-left: 250px;
+            padding: 20px;
+            margin-right: 250px;
+            /* Add margin to the right */
+        }
+
+        .dashboard-card {
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .dropdown-menu {
+            min-width: 200px;
+        }
+
+        .table {
+            padding-left: 20rem;
+        }
+    </style>
 </head>
+
+<body>
+    <div class="sidebar">
+        <ul>
+            <h2>
+                <li>Menu Bar</li>
+            </h2>
+            <li>Home</li>
+            <li>To Do</li>
+            <li>Analytics</li>
+            <li>Feedback</li>
+        </ul>
+    </div>
+
+    <div class="dashboard">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="dashboard-card bg-info text-white">
+                        <h3>Total Students</h3>
+                        <p id="total-students">1000</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="dashboard-card bg-success text-white">
+                        <h3>Total Professors</h3>
+                        <p id="total-professors">50</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="dashboard-card bg-warning text-white">
+                        <h3>Courses</h3>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Select Course
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Information Technology</a>
+                                <a class="dropdown-item" href="#">Computer Science</a>
+                                <a class="dropdown-item" href="#">ENTC</a>
+                                <a class="dropdown-item" href="#">Civil</a>
+                                <a class="dropdown-item" href="#">Mechanical</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="table">
+        <table class="table table-hover table-sm">
+            <thead>
+                <tr>
+                    <th scope="col">#Roll No</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Branch</th>
+                    <th scope="col">Mobile No</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Admission Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="left">79</td>
+                    <td>prasad zadokar</td>
+                    <td class="left">Information</td>
+                    <td><a href="tel:9876543210"> 8956652382 </a></td>
+                    <td><a href="mailto:shuxer@gmail.com"> prasadzadokar25@gnmail.com </a></td>
+                    <td class="left">22 Des 2021</td>
+                </tr>
+                <tr>
+                    <td class="left">5</td>
+                    <td>Om Zadokar</td>
+                    <td class="left">Science</td>
+                    <td><a href="tel:9876543210"> 9876543210 </a></td>
+                    <td><a href="mailto:shuxer@gmail.com"> omzadokar@gmail.com </a></td>
+                    <td class="left">20 Des 2021</td>
+                </tr>
+                <tr>
+                    <td class="left">15</td>
+                    <td>Sarah Smith</td>
+                    <td class="left">M.C.A.</td>
+                    <td><a href="tel:9876543210"> 9876543210 </a></td>
+                    <td><a href="mailto:shuxer@gmail.com"> sarah@gmail.com </a></td>
+                    <td class="left">05 Jun 2011</td>
+                </tr>
+                <tr>
+                    <td class="left">23</td>
+                    <td>John Deo</td>
+                    <td class="left">M.B.B.S.</td>
+                    <td><a href="tel:9876543210"> 9876543210 </a></td>
+                    <td><a href="mailto:shuxer@gmail.com"> john@gmail.com </a></td>
+                    <td class="left">15 Feb 2012</td>
+                </tr>
+                <tr>
+                    <td class="left">10</td>
+                    <td>Jay Soni</td>
+                    <td class="left">Arts</td>
+                    <td><a href="tel:9876543210"> 9876543210 </a></td>
+                    <td><a href="mailto:shuxer@gmail.com"> kenh@gmail.com </a></td>
+                    <td class="left">12 Nov 2012</td>
+                </tr>
+                <tr>
+                    <td class="left">14</td>
+                    <td>Jacob Ryan</td>
+                    <td class="left">Music</td>
+                    <td><a href="tel:9876543210"> 9876543210 </a></td>
+                    <td><a href="mailto:shuxer@gmail.com"> johnson@gmail.com </a></td>
+                    <td class="left">03 Dec 2001</td>
+                </tr>
+
+
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
